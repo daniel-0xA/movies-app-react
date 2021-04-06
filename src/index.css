@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #22254b;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.movie {
+  width: 300px;
+  margin: 0.5rem;
+  background-color: crimson;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.movie img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.movie-info {
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-overview {
+  padding: 0.3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  color: black;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-overview {
+  transform: translateY(0);
+}
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tag {
+  background-color: rgb(36, 24, 16);
+  padding: 0.3rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.tag.green {
+  color: green;
+}
+.tag.orange {
+  color: orange;
+}
+.tag.red {
+  color: red;
+}
+.header {
+  background-color: crimson;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-search {
+  font-size: 1.2rem;
+  border-radius: 50px;
+  padding: 0.5rem;
+  outline: none;
+}
+.header button {
+  background-color: white;
+  border-radius: 5px;
+}
