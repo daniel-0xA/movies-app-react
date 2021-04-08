@@ -1,9 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react'
 import Movie from './components/Movie'
-
-const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&vote_count.gte=1500&api_key=2fa531bf8e1b0973e905bc082ef00707&page=";
-const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=2fa531bf8e1b0973e905bc082ef00707&query=";
-
+import {FEATURED_API, SEARCH_API} from './API'
 
 const App = () => {
   const [movies, setMovies] = useState([])
