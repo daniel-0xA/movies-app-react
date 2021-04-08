@@ -85,3 +85,24 @@ body {
   background-color: white;
   border-radius: 5px;
 }
+
+.header-pagination {
+  display: flex;
+}
+.header-pagination button {
+  border-radius: 5px;
+  outline: none;
+  background-color: orangered;
+  color: white;
+  margin-right: 0.3rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.header-pagination button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.header-pagination .button-noaction:hover {
+  transform: scale(1);
+  cursor: inherit;
+}
