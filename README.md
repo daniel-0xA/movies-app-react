@@ -1,3 +1,4 @@
+Thema: create a movies app in vanilla JS and React/Vue/Angular.
 
 #Movies App w/ React Vue Angular
   - Project create/cleanup
